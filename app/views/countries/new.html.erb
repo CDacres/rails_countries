@@ -1,2 +1,25 @@
-<h1>Countries#new</h1>
-<p>Find me in app/views/countries/new.html.erb</p>
+<h1>Add a Country</h1>
+
+<form action="/countries" method="POST">
+
+	<%= token_tag %>
+
+	<label for="name">Name: </label>
+	<textarea name="name" placeholder="Country Name"></textarea>
+
+	<label for="pop">Population: </label>
+	<input type="number" name="pop" placeholder=0>
+
+
+	<label for="language">Language: </label>
+	<textarea name="language" placeholder="Primary Language"></textarea>
+
+	<label for="president">Ruler: </label>
+	<textarea name="president" placeholder="Ruler"></textarea>
+
+	<label for="flag">Flag URL: </label>
+	<textarea name="flag" placeholder="URL"></textarea>
+
+	<input type="submit" value="Save">
+
+</form>

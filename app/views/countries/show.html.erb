@@ -1,2 +1,9 @@
-<h1>Countries#show</h1>
-<p>Find me in app/views/countries/show.html.erb</p>
+<h1>Show a Country</h1>
+
+<h2><%= @country.name %></h2>
+<p>Population: <%= @country.pop %></p>
+<p>Primary Language: <%= @country.language %></p>
+<p>Ruler: <%= @country.president %></p>
+<p>Flag URL: <%= @country.flag %></p>
+
+<a href="/countries">Return to Home</a>

@@ -8,7 +8,8 @@
 	<p>Population: <%= country.pop %></p>
 	<p>Primary Language: <%= country.language %></p>
 	<p>Ruler: <%= country.president %></p>
-	<p>Flag URL: <%= country.flag %></p>
+	<img src="<%= country.flag %>" width="300" height="auto">
+	<br>
 
 	<a href="/countries/<%= country.id %>">Show Page</a>
 	<a href="/countries/<%= country.id %>/edit">Edit</a>
